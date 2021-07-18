@@ -32,9 +32,7 @@ public class StampActivity extends AppCompatActivity {
         Button returnButton = findViewById(R.id.returnbutton);
         returnButton.setOnClickListener(v -> finish());
 
-
-
-
+        /*
         //db
         MyDbHelper mDbHelper = new MyDbHelper(this);
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
@@ -70,7 +68,7 @@ public class StampActivity extends AppCompatActivity {
         //loop(いらない）
         while(c.moveToNext()){
             Log.v("tama", c.getString(c.getColumnIndex("name")));
-        }
+        }*/
 
     }
 }
