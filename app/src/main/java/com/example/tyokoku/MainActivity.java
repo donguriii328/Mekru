@@ -2,6 +2,7 @@ package com.example.tyokoku;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -48,16 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         /*AR画面への遷移*/
         Ar.setOnClickListener( v -> {
-            // flagがtrueの時
-            if (buttonTap) {
-                textView.setText("Hello");
-                buttonTap = false;
-            }
-            // flagがfalseの時
-            else {
-                textView.setText("World");
-                buttonTap = true;
-            }
+            Intent intent = new Intent(getApplication(), HelloArActivity.class);
+            startActivity(intent);
         });
 
     }
