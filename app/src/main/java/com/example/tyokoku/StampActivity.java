@@ -3,6 +3,7 @@ package com.example.tyokoku;
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
@@ -51,6 +52,11 @@ public class StampActivity extends AppCompatActivity {
 
         //db
         MyDbHelper mDbHelper = new MyDbHelper(this);
+        try {
+            mDbHelper.createEmptyDataBase();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         SQLiteDatabase db = mDbHelper.getWritableDatabase();
 
         //select
