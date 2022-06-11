@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -13,4 +14,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Login"
+=======
+rootProject.name = "Tyokoku"
+>>>>>>> origin/master
 include ':app'

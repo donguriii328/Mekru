@@ -1,4 +1,5 @@
 buildscript {
+<<<<<<< HEAD
     
     dependencies {
         classpath 'com.google.gms:google-services:4.3.10'
@@ -8,8 +9,30 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.1.3' apply false
     id 'com.android.library' version '7.1.3' apply false
+=======
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.2.1"
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+>>>>>>> origin/master
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

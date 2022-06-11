@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+<<<<<<< HEAD
     id 'com.google.gms.google-services'
 }
 
@@ -10,6 +11,17 @@ android {
         applicationId "com.example.login"
         minSdk 23
         targetSdk 32
+=======
+}
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.tyokoku"
+        minSdkVersion 27
+        targetSdkVersion 30
+>>>>>>> origin/master
         versionCode 1
         versionName "1.0"
 
@@ -26,10 +38,20 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+<<<<<<< HEAD
+=======
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+>>>>>>> origin/master
 }
 
 dependencies {
 
+<<<<<<< HEAD
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -47,3 +69,12 @@ dependencies {
     // Declare the dependency for the Firebase SDK for Google Analytics
     implementation 'com.google.firebase:firebase-analytics'
 }
+=======
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+>>>>>>> origin/master

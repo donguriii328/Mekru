@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Login</string>
+=======
+    <string name="app_name">Tyokoku</string>
+>>>>>>> origin/master
 </resources>
